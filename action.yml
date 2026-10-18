@@ -1,0 +1,13 @@
+name: 'Hello Custom Action'
+description: 'Greets someone and returns the time'
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
